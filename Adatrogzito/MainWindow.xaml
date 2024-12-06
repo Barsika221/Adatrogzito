@@ -1,0 +1,45 @@
+﻿<Window x:Class="Adatrogzito.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adatrogzito"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Név:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <TextBox x:Name="TextBoxName" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="0,0,10,0" Width="200"/>
+        <TextBlock Text="Életkor:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <TextBox x:Name="TextBoxAge" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <TextBlock Text="Email cím:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <TextBox x:Name="TextBoxEmail" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <TextBlock Text="Telefonszám:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <TextBox x:Name="TextBoxPhoneNumber" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <TextBlock Text="Lakcím:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <TextBox x:Name="TextBoxAddress" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <TextBlock Text="Nem:" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <ComboBox x:Name="ComboBoxGender" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Margin="0,0,10,0">
+            <ComboBoxItem Content="Férfi"/>
+            <ComboBoxItem Content="Nő"/>
+        </ComboBox>
+        <TextBlock Text="Megjegyzés" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <TextBox x:Name="TextBoxComment" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Margin="0,0,10,0" />
+        <Button x:Name="hozzaad" Content="Hozzáadás" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Click="HozzaadClick"/>
+        <Button Content="Listaoldal" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Click="ListaoldalClick"/>
+    </Grid>
+</Window>
